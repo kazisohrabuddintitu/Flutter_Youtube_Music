@@ -47,7 +47,7 @@ class _HomeActivityState extends State<HomeActivity> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    
+
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: MyColor.DarkGrey.withOpacity(0.5),
@@ -64,7 +64,8 @@ class _HomeActivityState extends State<HomeActivity> {
         children: [
           ///ListView
           Positioned(
-            top: 100,
+            top: 120,
+
             height: size.height-120,
             width: size.width,
             child: ListView(
@@ -237,7 +238,7 @@ class _HomeActivityState extends State<HomeActivity> {
                   height: 100,
                   color: MyColor.DarkGrey.withOpacity(0.5),
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
+                    padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -311,7 +312,7 @@ class _HomeActivityState extends State<HomeActivity> {
           ///BottomBar
           Positioned(
             width: size.width,
-            bottom: 15,
+            bottom: 30,
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 15),
               padding: EdgeInsets.all(16),
@@ -376,76 +377,6 @@ class _HomeActivityState extends State<HomeActivity> {
           ),
         ],
       ),
-      // bottomNavigationBar: Container(
-      //   height: size.width*0.2,
-      //   color: Colors.transparent,
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.start,
-      //     children: [
-      //       Container(
-      //         margin: EdgeInsets.symmetric(horizontal: 15),
-      //         padding: EdgeInsets.all(16),
-      //         decoration: BoxDecoration(
-      //           // color: Colors.black.withOpacity(0.4),
-      //           borderRadius: BorderRadius.circular(30),
-      //           color: Colors.black.withOpacity(0.3),
-      //         ),
-      //         child: Row(
-      //           mainAxisAlignment: MainAxisAlignment.spaceAround,
-      //           children: [
-      //             BottomItem(
-      //               icon: Icons.home,
-      //               label: 'Home',
-      //               isSelected: selectedIndex == 0,
-      //               onTap: () {
-      //                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeActivity()));
-      //                 print('Tapped Home');
-      //                 setState(() {
-      //                   selectedIndex = 0;
-      //                 });
-      //               },
-      //             ),
-      //             BottomItem(
-      //               icon: Icons.assistant_navigation,
-      //               label: 'Navigation',
-      //               isSelected: selectedIndex == 1,
-      //               onTap: () {
-      //                 print('Tapped navigation');
-      //                 setState(() {
-      //                   selectedIndex = 1;
-      //                 });
-      //               },
-      //             ),
-      //             BottomItem(
-      //               icon: Icons.search,
-      //               label: 'Search',
-      //               isSelected: selectedIndex == 2,
-      //               onTap: () {
-      //                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => search()));
-      //                 print('Tapped Search');
-      //                 setState(() {
-      //                   selectedIndex = 2;
-      //                 });
-      //               },
-      //             ),
-      //             BottomItem(
-      //               icon: Icons.play_circle_outlined,
-      //               label: 'My music',
-      //               isSelected: selectedIndex == 3,
-      //               onTap: () {
-      //                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => myMusic()));
-      //                 print('Tapped music');
-      //                 setState(() {
-      //                   selectedIndex = 3;
-      //                 });
-      //               },
-      //             ),
-      //           ],
-      //         ),
-      //       ),
-      //     ],
-      //   ),
-      // ),
     );
   }
 }

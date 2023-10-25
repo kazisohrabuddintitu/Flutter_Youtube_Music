@@ -1,3 +1,11 @@
-# youtube_music_front end
+# Demo
+<p float="left">
+  <img src="images/home.png" alt="Home" height="250"/>
+  <img src="images/ownmusic.png" alt="own" height="250"/>
+  <img src="images/search.png" alt="search" height="250"/>
+</p>
 
-This project is a Mobile application of Youtube Music.
+# Youtube Music
+
+This is an application using Flutter as front-end.
+
